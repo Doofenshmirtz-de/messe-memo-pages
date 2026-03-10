@@ -1,1 +1,309 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutzerklärung – Messe Memo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f0f10;
+      --surface: #1a1a1d;
+      --border: #2a2a2e;
+      --accent: #e8d5b0;
+      --text: #d4d0c8;
+      --muted: #6b6860;
+      --heading: #f0ece0;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+    .noise {
+      position: fixed; inset: 0; pointer-events: none; z-index: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      opacity: 0.4;
+    }
+    header {
+      position: relative; z-index: 1;
+      padding: 60px 40px 40px;
+      border-bottom: 1px solid var(--border);
+      max-width: 860px; margin: 0 auto;
+    }
+    .app-tag {
+      display: inline-block;
+      font-size: 11px; font-weight: 500; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--accent);
+      border: 1px solid var(--accent); border-radius: 20px;
+      padding: 4px 12px; margin-bottom: 20px;
+      opacity: 0.8;
+    }
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: var(--heading);
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .lang-toggle {
+      margin-top: 24px;
+      display: flex; gap: 8px;
+    }
+    .lang-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 6px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(232,213,176,0.07);
+    }
+    main {
+      position: relative; z-index: 1;
+      max-width: 860px; margin: 0 auto;
+      padding: 48px 40px 80px;
+    }
+    .lang-section { display: none; }
+    .lang-section.visible { display: block; }
+    section {
+      margin-bottom: 44px;
+      padding-bottom: 44px;
+      border-bottom: 1px solid var(--border);
+    }
+    section:last-child { border-bottom: none; }
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.25rem;
+      color: var(--heading);
+      font-weight: 400;
+      margin-bottom: 16px;
+    }
+    p { margin-bottom: 12px; color: var(--text); }
+    p:last-child { margin-bottom: 0; }
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 4px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 0.9rem;
+    }
+    .contact-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+    }
+    .contact-box a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    footer {
+      position: relative; z-index: 1;
+      border-top: 1px solid var(--border);
+      padding: 24px 40px;
+      max-width: 860px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 12px;
+    }
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.2s;
+    }
+    footer a:hover { color: var(--accent); }
+    .footer-links { display: flex; gap: 20px; }
+    @media (max-width: 600px) {
+      header, main, footer { padding-left: 20px; padding-right: 20px; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="noise"></div>
+  <header>
+    <div class="app-tag">Messe Memo</div>
+    <h1>Datenschutzerklärung<br><span style="color:var(--muted);font-size:0.6em">Privacy Policy</span></h1>
+    <p class="subtitle">Zuletzt aktualisiert · Last updated: <strong style="color:var(--accent)">März 2025</strong></p>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="switchLang('de', this)">Deutsch</button>
+      <button class="lang-btn" onclick="switchLang('en', this)">English</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- DEUTSCH -->
+    <div class="lang-section visible" id="lang-de">
+
+      <section>
+        <div class="highlight-box">
+          <strong style="color:var(--accent)">Kurzversion:</strong> Messe Memo sammelt <strong>keine personenbezogenen Daten</strong>. Die App funktioniert vollständig offline. Es werden keine Daten an Dritte übertragen.
+        </div>
+      </section>
+
+      <section>
+        <h2>1. Verantwortliche Person</h2>
+        <div class="contact-box">
+          <p><strong style="color:var(--heading)">Messe Memo App</strong></p>
+          <p>GitHub: <a href="https://github.com/Doofenshmirtz-de">github.com/Doofenshmirtz-de</a></p>
+          <p>Kontakt: <a href="mailto:deine@email.de">deine@email.de</a></p>
+        </div>
+      </section>
+
+      <section>
+        <h2>2. Welche Daten werden erhoben?</h2>
+        <p>Messe Memo erhebt <strong>keine personenbezogenen Daten</strong>. Die App speichert ausschließlich lokal auf deinem Gerät:</p>
+        <div class="highlight-box">
+          Notizen, Fotos und Einträge, die du selbst in der App erstellst — diese verlassen dein Gerät zu keinem Zeitpunkt.
+        </div>
+        <p>Es werden keine Analysen, kein Tracking, keine Werbung und keine Absturzmeldungen an externe Server gesendet.</p>
+      </section>
+
+      <section>
+        <h2>3. Lokale Datenspeicherung</h2>
+        <p>Alle von dir eingegebenen Daten werden ausschließlich lokal auf deinem iOS-Gerät gespeichert. Wenn du die App deinstallierst, werden alle gespeicherten Daten gelöscht.</p>
+        <p>Eine Sicherungskopie kann über iCloud Backup erstellt werden, sofern du iCloud Backup auf deinem Gerät aktiviert hast. Dies unterliegt der <a href="https://www.apple.com/legal/privacy/de-ww/" style="color:var(--accent)">Datenschutzerklärung von Apple</a>.</p>
+      </section>
+
+      <section>
+        <h2>4. Weitergabe an Dritte</h2>
+        <p>Es werden <strong>keine Daten</strong> an Dritte weitergegeben. Die App verwendet keine Third-Party-SDKs, keine Analysetools und keine Werbedienste.</p>
+      </section>
+
+      <section>
+        <h2>5. Deine Rechte (DSGVO)</h2>
+        <p>Gemäß der Datenschutz-Grundverordnung (DSGVO) hast du folgende Rechte:</p>
+        <div class="highlight-box">
+          <strong>Auskunft</strong> (Art. 15) · <strong>Berichtigung</strong> (Art. 16) · <strong>Löschung</strong> (Art. 17) · <strong>Einschränkung</strong> (Art. 18) · <strong>Widerspruch</strong> (Art. 21)
+        </div>
+        <p>Da die App keine personenbezogenen Daten erhebt oder verarbeitet, sind diese Rechte bereits durch das rein lokale Speichern gewährleistet. Du kannst alle deine Daten jederzeit direkt in der App löschen.</p>
+      </section>
+
+      <section>
+        <h2>6. Kinder</h2>
+        <p>Messe Memo richtet sich nicht an Kinder unter 13 Jahren. Die App erhebt keine Daten und ist daher für alle Altersgruppen unbedenklich.</p>
+      </section>
+
+      <section>
+        <h2>7. Änderungen dieser Datenschutzerklärung</h2>
+        <p>Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf zu aktualisieren. Änderungen werden auf dieser Seite veröffentlicht. Das Datum der letzten Aktualisierung steht oben auf dieser Seite.</p>
+      </section>
+
+      <section>
+        <h2>8. Kontakt</h2>
+        <div class="contact-box">
+          <p>Bei Fragen zum Datenschutz erreichst du uns unter:</p>
+          <p><a href="mailto:deine@email.de">deine@email.de</a></p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ENGLISH -->
+    <div class="lang-section" id="lang-en">
+
+      <section>
+        <div class="highlight-box">
+          <strong style="color:var(--accent)">Summary:</strong> Messe Memo collects <strong>no personal data</strong>. The app works completely offline. No data is transmitted to third parties.
+        </div>
+      </section>
+
+      <section>
+        <h2>1. Data Controller</h2>
+        <div class="contact-box">
+          <p><strong style="color:var(--heading)">Messe Memo App</strong></p>
+          <p>GitHub: <a href="https://github.com/Doofenshmirtz-de">github.com/Doofenshmirtz-de</a></p>
+          <p>Contact: <a href="mailto:deine@email.de">deine@email.de</a></p>
+        </div>
+      </section>
+
+      <section>
+        <h2>2. What Data Is Collected?</h2>
+        <p>Messe Memo collects <strong>no personal data</strong>. The app only stores locally on your device:</p>
+        <div class="highlight-box">
+          Notes, photos, and entries you create within the app — these never leave your device.
+        </div>
+        <p>No analytics, tracking, advertising, or crash reports are sent to external servers.</p>
+      </section>
+
+      <section>
+        <h2>3. Local Data Storage</h2>
+        <p>All data you enter is stored exclusively on your iOS device. If you uninstall the app, all stored data is deleted.</p>
+        <p>A backup may be created via iCloud Backup if you have enabled it on your device. This is subject to <a href="https://www.apple.com/legal/privacy/en-ww/" style="color:var(--accent)">Apple's Privacy Policy</a>.</p>
+      </section>
+
+      <section>
+        <h2>4. Sharing with Third Parties</h2>
+        <p>We share <strong>no data</strong> with third parties. The app uses no third-party SDKs, analytics tools, or advertising services.</p>
+      </section>
+
+      <section>
+        <h2>5. Your Rights (GDPR)</h2>
+        <p>Under the General Data Protection Regulation (GDPR), you have the following rights:</p>
+        <div class="highlight-box">
+          <strong>Access</strong> (Art. 15) · <strong>Rectification</strong> (Art. 16) · <strong>Erasure</strong> (Art. 17) · <strong>Restriction</strong> (Art. 18) · <strong>Objection</strong> (Art. 21)
+        </div>
+        <p>Since the app does not collect or process personal data, these rights are already ensured by local-only storage. You can delete all your data at any time directly within the app.</p>
+      </section>
+
+      <section>
+        <h2>6. Children</h2>
+        <p>Messe Memo is not directed at children under 13. The app does not collect any data and is therefore safe for all age groups.</p>
+      </section>
+
+      <section>
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>We reserve the right to update this privacy policy as needed. Changes will be published on this page. The date of the last update is shown at the top of this page.</p>
+      </section>
+
+      <section>
+        <h2>8. Contact</h2>
+        <div class="contact-box">
+          <p>For privacy-related questions, contact us at:</p>
+          <p><a href="mailto:deine@email.de">deine@email.de</a></p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <span style="color:var(--muted);font-size:0.85rem">© 2025 Messe Memo</span>
+    <div class="footer-links">
+      <a href="terms.html">Nutzungsbedingungen / Terms</a>
+      <a href="support.html">Support</a>
+    </div>
+  </footer>
+
+  <script>
+    function switchLang(lang, btn) {
+      document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('visible'));
+      document.getElementById('lang-' + lang).classList.add('visible');
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>
 

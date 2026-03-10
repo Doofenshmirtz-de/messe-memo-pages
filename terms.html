@@ -1,1 +1,244 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutzungsbedingungen – Messe Memo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f0f10;
+      --surface: #1a1a1d;
+      --border: #2a2a2e;
+      --accent: #e8d5b0;
+      --text: #d4d0c8;
+      --muted: #6b6860;
+      --heading: #f0ece0;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+    .noise {
+      position: fixed; inset: 0; pointer-events: none; z-index: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      opacity: 0.4;
+    }
+    header {
+      position: relative; z-index: 1;
+      padding: 60px 40px 40px;
+      border-bottom: 1px solid var(--border);
+      max-width: 860px; margin: 0 auto;
+    }
+    .app-tag {
+      display: inline-block;
+      font-size: 11px; font-weight: 500; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--accent);
+      border: 1px solid var(--accent); border-radius: 20px;
+      padding: 4px 12px; margin-bottom: 20px; opacity: 0.8;
+    }
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: var(--heading); font-weight: 400;
+      line-height: 1.2; margin-bottom: 12px;
+    }
+    .subtitle { color: var(--muted); font-size: 0.9rem; }
+    .lang-toggle { margin-top: 24px; display: flex; gap: 8px; }
+    .lang-btn {
+      background: transparent; border: 1px solid var(--border);
+      color: var(--muted); padding: 6px 16px; border-radius: 20px;
+      cursor: pointer; font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem; transition: all 0.2s;
+    }
+    .lang-btn.active { border-color: var(--accent); color: var(--accent); background: rgba(232,213,176,0.07); }
+    main {
+      position: relative; z-index: 1;
+      max-width: 860px; margin: 0 auto;
+      padding: 48px 40px 80px;
+    }
+    .lang-section { display: none; }
+    .lang-section.visible { display: block; }
+    section { margin-bottom: 44px; padding-bottom: 44px; border-bottom: 1px solid var(--border); }
+    section:last-child { border-bottom: none; }
+    h2 { font-family: 'DM Serif Display', serif; font-size: 1.25rem; color: var(--heading); font-weight: 400; margin-bottom: 16px; }
+    p { margin-bottom: 12px; color: var(--text); }
+    p:last-child { margin-bottom: 0; }
+    .highlight-box {
+      background: var(--surface); border: 1px solid var(--border);
+      border-left: 3px solid var(--accent); border-radius: 4px;
+      padding: 16px 20px; margin: 20px 0; font-size: 0.9rem;
+    }
+    .contact-box { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; }
+    .contact-box a { color: var(--accent); text-decoration: none; }
+    a { color: var(--accent); text-decoration: none; }
+    footer {
+      position: relative; z-index: 1;
+      border-top: 1px solid var(--border);
+      padding: 24px 40px; max-width: 860px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 12px;
+    }
+    footer a { color: var(--muted); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+    footer a:hover { color: var(--accent); }
+    .footer-links { display: flex; gap: 20px; }
+    @media (max-width: 600px) {
+      header, main, footer { padding-left: 20px; padding-right: 20px; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="noise"></div>
+  <header>
+    <div class="app-tag">Messe Memo</div>
+    <h1>Nutzungsbedingungen<br><span style="color:var(--muted);font-size:0.6em">Terms of Use</span></h1>
+    <p class="subtitle">Zuletzt aktualisiert · Last updated: <strong style="color:var(--accent)">März 2025</strong></p>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="switchLang('de', this)">Deutsch</button>
+      <button class="lang-btn" onclick="switchLang('en', this)">English</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- DEUTSCH -->
+    <div class="lang-section visible" id="lang-de">
+
+      <section>
+        <h2>1. Geltungsbereich</h2>
+        <p>Diese Nutzungsbedingungen gelten für die Verwendung der mobilen App <strong style="color:var(--heading)">Messe Memo</strong> (im Folgenden „App"), die über den Apple App Store zum Download angeboten wird.</p>
+        <p>Mit dem Download und der Nutzung der App erklärst du dich mit diesen Nutzungsbedingungen einverstanden.</p>
+      </section>
+
+      <section>
+        <h2>2. Lizenz und Nutzungsrecht</h2>
+        <p>Dir wird eine eingeschränkte, nicht-exklusive, nicht übertragbare Lizenz zur Nutzung der App auf deinen Apple-Geräten gewährt, die dir gehören oder die du kontrollierst, vorbehaltlich dieser Bedingungen.</p>
+        <div class="highlight-box">
+          Du darfst die App nicht kopieren, modifizieren, zerlegen, zurückentwickeln oder weiterverkaufen.
+        </div>
+      </section>
+
+      <section>
+        <h2>3. Inhalte der Nutzer</h2>
+        <p>Alle Notizen, Fotos und Einträge, die du in der App erstellst, gehören dir. Die App überträgt diese Daten zu keinem Zeitpunkt an uns oder Dritte.</p>
+        <p>Du bist selbst für die Inhalte verantwortlich, die du in der App speicherst.</p>
+      </section>
+
+      <section>
+        <h2>4. Haftungsausschluss</h2>
+        <p>Die App wird „wie besehen" zur Verfügung gestellt, ohne jegliche ausdrückliche oder stillschweigende Gewährleistung. Wir übernehmen keine Haftung für:</p>
+        <div class="highlight-box">
+          Datenverlust durch Geräteschäden oder Deinstallation · Fehler oder Unterbrechungen des Dienstes · indirekte Schäden durch die Nutzung der App
+        </div>
+      </section>
+
+      <section>
+        <h2>5. Apple App Store Bedingungen</h2>
+        <p>Die Nutzung der App unterliegt zusätzlich den <a href="https://www.apple.com/legal/internet-services/itunes/de/terms.html">Nutzungsbedingungen des Apple App Store</a>. Im Falle eines Widerspruchs zwischen diesen Bedingungen und den Apple-Bedingungen gelten die Apple-Bedingungen.</p>
+        <p>Apple ist nicht für die App verantwortlich und übernimmt keine Gewährleistung oder Haftung in Bezug auf die App.</p>
+      </section>
+
+      <section>
+        <h2>6. Änderungen</h2>
+        <p>Wir behalten uns vor, diese Nutzungsbedingungen jederzeit zu ändern. Änderungen werden auf dieser Seite veröffentlicht. Die fortgesetzte Nutzung der App nach Änderungen gilt als Zustimmung zu den neuen Bedingungen.</p>
+      </section>
+
+      <section>
+        <h2>7. Geltendes Recht</h2>
+        <p>Es gilt das Recht der Bundesrepublik Deutschland. Gerichtsstand ist Deutschland.</p>
+      </section>
+
+      <section>
+        <h2>8. Kontakt</h2>
+        <div class="contact-box">
+          <p>Bei Fragen erreichst du uns unter:</p>
+          <p><a href="mailto:deine@email.de">deine@email.de</a></p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ENGLISH -->
+    <div class="lang-section" id="lang-en">
+
+      <section>
+        <h2>1. Scope</h2>
+        <p>These Terms of Use apply to the use of the mobile app <strong style="color:var(--heading)">Messe Memo</strong> (hereinafter "App"), available for download on the Apple App Store.</p>
+        <p>By downloading and using the App, you agree to these Terms of Use.</p>
+      </section>
+
+      <section>
+        <h2>2. License and Usage Rights</h2>
+        <p>You are granted a limited, non-exclusive, non-transferable license to use the App on Apple devices you own or control, subject to these terms.</p>
+        <div class="highlight-box">
+          You may not copy, modify, disassemble, reverse engineer, or resell the App.
+        </div>
+      </section>
+
+      <section>
+        <h2>3. User Content</h2>
+        <p>All notes, photos, and entries you create in the App belong to you. The App never transmits this data to us or any third party.</p>
+        <p>You are solely responsible for the content you store in the App.</p>
+      </section>
+
+      <section>
+        <h2>4. Disclaimer of Warranties</h2>
+        <p>The App is provided "as is" without any express or implied warranties. We are not liable for:</p>
+        <div class="highlight-box">
+          Data loss due to device damage or uninstallation · Errors or interruptions of the service · Indirect damages from use of the App
+        </div>
+      </section>
+
+      <section>
+        <h2>5. Apple App Store Terms</h2>
+        <p>Use of the App is also subject to the <a href="https://www.apple.com/legal/internet-services/itunes/us/terms.html">Apple App Store Terms of Service</a>. In case of conflict between these terms and Apple's terms, Apple's terms shall prevail.</p>
+        <p>Apple is not responsible for the App and assumes no warranty or liability with respect to the App.</p>
+      </section>
+
+      <section>
+        <h2>6. Changes</h2>
+        <p>We reserve the right to modify these Terms of Use at any time. Changes will be published on this page. Continued use of the App after changes constitutes acceptance of the new terms.</p>
+      </section>
+
+      <section>
+        <h2>7. Governing Law</h2>
+        <p>These terms are governed by the laws of the Federal Republic of Germany.</p>
+      </section>
+
+      <section>
+        <h2>8. Contact</h2>
+        <div class="contact-box">
+          <p>For questions, contact us at:</p>
+          <p><a href="mailto:deine@email.de">deine@email.de</a></p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <span style="color:var(--muted);font-size:0.85rem">© 2025 Messe Memo</span>
+    <div class="footer-links">
+      <a href="privacy-policy.html">Datenschutz / Privacy</a>
+      <a href="support.html">Support</a>
+    </div>
+  </footer>
+
+  <script>
+    function switchLang(lang, btn) {
+      document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('visible'));
+      document.getElementById('lang-' + lang).classList.add('visible');
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>
 

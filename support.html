@@ -9,7 +9,7 @@
   <style>
     :root {
       --bg: #0f0f10; --surface: #1a1a1d; --border: #2a2a2e;
-      --accent: #e8d5b0; --text: #d4d0c8; --muted: #6b6860; --heading: #f0ece0;
+      --accent: #159FFF; --text: #d4d0c8; --muted: #6b6860; --heading: #f0ece0;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -21,7 +21,7 @@
     .subtitle { color: var(--muted); font-size: 0.9rem; }
     .lang-toggle { margin-top: 24px; display: flex; gap: 8px; }
     .lang-btn { background: transparent; border: 1px solid var(--border); color: var(--muted); padding: 6px 16px; border-radius: 20px; cursor: pointer; font-family: 'DM Sans', sans-serif; font-size: 0.85rem; transition: all 0.2s; }
-    .lang-btn.active { border-color: var(--accent); color: var(--accent); background: rgba(232,213,176,0.07); }
+    .lang-btn.active { border-color: var(--accent); color: var(--accent); background: rgba(21, 159, 255, 0.1); }
     main { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; padding: 48px 40px 80px; }
     .lang-section { display: none; }
     .lang-section.visible { display: block; }
@@ -54,7 +54,6 @@
   </header>
 
   <main>
-    <!-- DEUTSCH -->
     <div class="lang-section visible" id="lang-de">
       <section>
         <h2>Kontakt</h2>
@@ -76,12 +75,11 @@
       </section>
     </div>
 
-    <!-- ENGLISH -->
     <div class="lang-section" id="lang-en">
       <section>
         <h2>Contact</h2>
         <div class="contact-card">
-          <p style="color:var(--muted);font-size:0.9rem">For questions, issues, or feedback, just send us an email. We usually reply within 1–2 business days.</p>
+          <p style="color:var(--muted);font-size:0.9rem">If you have any questions, issues, or feedback, simply send us an email. We usually reply within 1–2 business days.</p>
           <a href="#" class="email-link">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             <span class="email-text"></span>
@@ -92,7 +90,7 @@
       <section>
         <h2>About the App</h2>
         <div class="highlight-box">
-          <strong style="color:var(--accent)">Messe Memo</strong> is your digital companion for trade fairs and events. Capture contacts and impressions — quickly, clearly, and fully offline.
+          <strong style="color:var(--accent)">Messe Memo</strong> is your digital companion for trade fairs and events. Capture contacts and impressions — quickly, clearly, and completely offline.
         </div>
         <p>Version: <strong style="color:var(--heading)">1.0</strong> · Compatible with iOS 16+</p>
       </section>
@@ -100,7 +98,7 @@
   </main>
 
   <footer>
-    <span style="color:var(--muted);font-size:0.85rem">© 2025 Messe Memo</span>
+    <span style="color:var(--muted);font-size:0.85rem">© 2026 Messe Memo</span>
     <div class="footer-links">
       <a href="privacy-policy.html">Datenschutz / Privacy</a>
       <a href="terms.html">Nutzungsbedingungen / Terms</a>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Datenschutzerklärung – Messe Memo</title>
+  <title>Nutzungsbedingungen – Messe Memo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
@@ -42,41 +42,23 @@
       font-size: 11px; font-weight: 500; letter-spacing: 0.15em;
       text-transform: uppercase; color: var(--accent);
       border: 1px solid var(--accent); border-radius: 20px;
-      padding: 4px 12px; margin-bottom: 20px;
-      opacity: 0.8;
+      padding: 4px 12px; margin-bottom: 20px; opacity: 0.8;
     }
     h1 {
       font-family: 'DM Serif Display', serif;
       font-size: clamp(2rem, 5vw, 3rem);
-      color: var(--heading);
-      font-weight: 400;
-      line-height: 1.2;
-      margin-bottom: 12px;
+      color: var(--heading); font-weight: 400;
+      line-height: 1.2; margin-bottom: 12px;
     }
-    .subtitle {
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-    .lang-toggle {
-      margin-top: 24px;
-      display: flex; gap: 8px;
-    }
+    .subtitle { color: var(--muted); font-size: 0.9rem; }
+    .lang-toggle { margin-top: 24px; display: flex; gap: 8px; }
     .lang-btn {
-      background: transparent;
-      border: 1px solid var(--border);
-      color: var(--muted);
-      padding: 6px 16px;
-      border-radius: 20px;
-      cursor: pointer;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.85rem;
-      transition: all 0.2s;
+      background: transparent; border: 1px solid var(--border);
+      color: var(--muted); padding: 6px 16px; border-radius: 20px;
+      cursor: pointer; font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem; transition: all 0.2s;
     }
-    .lang-btn.active {
-      border-color: var(--accent);
-      color: var(--accent);
-      background: rgba(21, 159, 255, 0.1);
-    }
+    .lang-btn.active { border-color: var(--accent); color: var(--accent); background: rgba(21, 159, 255, 0.1); }
     main {
       position: relative; z-index: 1;
       max-width: 860px; margin: 0 auto;
@@ -84,54 +66,27 @@
     }
     .lang-section { display: none; }
     .lang-section.visible { display: block; }
-    section {
-      margin-bottom: 44px;
-      padding-bottom: 44px;
-      border-bottom: 1px solid var(--border);
-    }
+    section { margin-bottom: 44px; padding-bottom: 44px; border-bottom: 1px solid var(--border); }
     section:last-child { border-bottom: none; }
-    h2 {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.25rem;
-      color: var(--heading);
-      font-weight: 400;
-      margin-bottom: 16px;
-    }
+    h2 { font-family: 'DM Serif Display', serif; font-size: 1.25rem; color: var(--heading); font-weight: 400; margin-bottom: 16px; }
     p { margin-bottom: 12px; color: var(--text); }
     p:last-child { margin-bottom: 0; }
     .highlight-box {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-left: 3px solid var(--accent);
-      border-radius: 4px;
-      padding: 16px 20px;
-      margin: 20px 0;
-      font-size: 0.9rem;
+      background: var(--surface); border: 1px solid var(--border);
+      border-left: 3px solid var(--accent); border-radius: 4px;
+      padding: 16px 20px; margin: 20px 0; font-size: 0.9rem;
     }
-    .contact-box {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 24px;
-    }
-    .contact-box a {
-      color: var(--accent);
-      text-decoration: none;
-    }
+    .contact-box { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; }
+    .contact-box a { color: var(--accent); text-decoration: none; }
+    a { color: var(--accent); text-decoration: none; }
     footer {
       position: relative; z-index: 1;
       border-top: 1px solid var(--border);
-      padding: 24px 40px;
-      max-width: 860px; margin: 0 auto;
+      padding: 24px 40px; max-width: 860px; margin: 0 auto;
       display: flex; justify-content: space-between; align-items: center;
       flex-wrap: wrap; gap: 12px;
     }
-    footer a {
-      color: var(--muted);
-      text-decoration: none;
-      font-size: 0.85rem;
-      transition: color 0.2s;
-    }
+    footer a { color: var(--muted); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
     footer a:hover { color: var(--accent); }
     .footer-links { display: flex; gap: 20px; }
     @media (max-width: 600px) {
@@ -144,7 +99,7 @@
   <div class="noise"></div>
   <header>
     <div class="app-tag">Messe Memo</div>
-    <h1>Datenschutzerklärung<br><span style="color:var(--muted);font-size:0.6em">Privacy Policy</span></h1>
+    <h1>Nutzungsbedingungen<br><span style="color:var(--muted);font-size:0.6em">Terms of Use</span></h1>
     <p class="subtitle">Zuletzt aktualisiert · Last updated: <strong style="color:var(--accent)">März 2026</strong></p>
     <div class="lang-toggle">
       <button class="lang-btn active" onclick="switchLang('de', this)">Deutsch</button>
@@ -155,128 +110,108 @@
   <main>
     <div class="lang-section visible" id="lang-de">
       <section>
+        <h2>1. Geltungsbereich</h2>
+        <p>Diese Nutzungsbedingungen gelten für die Verwendung der mobilen App <strong style="color:var(--heading)">Messe Memo</strong> (im Folgenden „App"), die über den Apple App Store zum Download angeboten wird.</p>
+        <p>Mit dem Download und der Nutzung der App erklärst du dich mit diesen Nutzungsbedingungen einverstanden.</p>
+      </section>
+
+      <section>
+        <h2>2. Lizenz und Nutzungsrecht</h2>
+        <p>Dir wird eine eingeschränkte, nicht-exklusive, nicht übertragbare Lizenz zur Nutzung der App auf deinen Apple-Geräten gewährt, die dir gehören oder die du kontrollierst, vorbehaltlich dieser Bedingungen.</p>
         <div class="highlight-box">
-          <strong style="color:var(--accent)">Kurzversion:</strong> Messe Memo sammelt <strong>keine personenbezogenen Daten</strong>. Die App funktioniert vollständig offline. Es werden keine Daten an Dritte übertragen.
+          Du darfst die App nicht kopieren, modifizieren, zerlegen, zurückentwickeln oder weiterverkaufen.
         </div>
       </section>
 
       <section>
-        <h2>1. Verantwortliche Person</h2>
-        <div class="contact-box">
-          <p><strong style="color:var(--heading)">Jarno Kibies</strong></p>
-          <p>GitHub: <a href="https://github.com/Doofenshmirtz-de">github.com/Doofenshmirtz-de</a></p>
-          <p>Kontakt: <a href="#" class="email-link"></a></p>
-        </div>
+        <h2>3. Inhalte der Nutzer</h2>
+        <p>Alle Notizen, Fotos und Einträge, die du in der App erstellst, gehören dir. Die App überträgt diese Daten zu keinem Zeitpunkt an uns oder Dritte.</p>
+        <p>Du bist selbst für die Inhalte verantwortlich, die du in der App speicherst.</p>
       </section>
 
       <section>
-        <h2>2. Welche Daten werden erhoben?</h2>
-        <p>Messe Memo erhebt <strong>keine personenbezogenen Daten</strong>. Die App speichert ausschließlich lokal auf deinem Gerät:</p>
+        <h2>4. Haftungsausschluss</h2>
+        <p>Die App wird „wie besehen" zur Verfügung gestellt, ohne jegliche ausdrückliche oder stillschweigende Gewährleistung. Wir übernehmen keine Haftung für:</p>
         <div class="highlight-box">
-          Notizen, Fotos und Einträge, die du selbst in der App erstellst — diese verlassen dein Gerät zu keinem Zeitpunkt.
+          Datenverlust durch Geräteschäden oder Deinstallation · Fehler oder Unterbrechungen des Dienstes · indirekte Schäden durch die Nutzung der App
         </div>
-        <p>Es werden keine Analysen, kein Tracking, keine Werbung und keine Absturzmeldungen an externe Server gesendet.</p>
       </section>
 
       <section>
-        <h2>3. Lokale Datenspeicherung</h2>
-        <p>Alle von dir eingegebenen Daten werden ausschließlich lokal auf deinem iOS-Gerät gespeichert. Wenn du die App deinstallierst, werden alle gespeicherten Daten gelöscht.</p>
-        <p>Eine Sicherungskopie kann über iCloud Backup erstellt werden, sofern du iCloud Backup auf deinem Gerät aktiviert hast. Dies unterliegt der <a href="https://www.apple.com/legal/privacy/de-ww/" style="color:var(--accent)">Datenschutzerklärung von Apple</a>.</p>
+        <h2>5. Apple App Store Bedingungen</h2>
+        <p>Die Nutzung der App unterliegt zusätzlich den <a href="https://www.apple.com/legal/internet-services/itunes/de/terms.html">Nutzungsbedingungen des Apple App Store</a>. Im Falle eines Widerspruchs zwischen diesen Bedingungen und den Apple-Bedingungen gelten die Apple-Bedingungen.</p>
+        <p>Apple ist nicht für die App verantwortlich und übernimmt keine Gewährleistung oder Haftung in Bezug auf die App.</p>
       </section>
 
       <section>
-        <h2>4. Weitergabe an Dritte</h2>
-        <p>Es werden <strong>keine Daten</strong> an Dritte weitergegeben. Die App verwendet keine Third-Party-SDKs, keine Analysetools und keine Werbedienste.</p>
+        <h2>6. Änderungen</h2>
+        <p>Wir behalten uns vor, diese Nutzungsbedingungen jederzeit zu ändern. Änderungen werden auf dieser Seite veröffentlicht. Die fortgesetzte Nutzung der App nach Änderungen gilt als Zustimmung zu den neuen Bedingungen.</p>
       </section>
 
       <section>
-        <h2>5. Deine Rechte (DSGVO)</h2>
-        <p>Gemäß der Datenschutz-Grundverordnung (DSGVO) hast du folgende Rechte:</p>
-        <div class="highlight-box">
-          <strong>Auskunft</strong> (Art. 15) · <strong>Berichtigung</strong> (Art. 16) · <strong>Löschung</strong> (Art. 17) · <strong>Einschränkung</strong> (Art. 18) · <strong>Widerspruch</strong> (Art. 21)
-        </div>
-        <p>Da die App keine personenbezogenen Daten erhebt oder verarbeitet, sind diese Rechte bereits durch das rein lokale Speichern gewährleistet. Du kannst alle deine Daten jederzeit direkt in der App löschen.</p>
-      </section>
-
-      <section>
-        <h2>6. Kinder</h2>
-        <p>Messe Memo richtet sich nicht an Kinder unter 13 Jahren. Die App erhebt keine Daten und ist daher für alle Altersgruppen unbedenklich.</p>
-      </section>
-
-      <section>
-        <h2>7. Änderungen dieser Datenschutzerklärung</h2>
-        <p>Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf zu aktualisieren. Änderungen werden auf dieser Seite veröffentlicht. Das Datum der letzten Aktualisierung steht oben auf dieser Seite.</p>
+        <h2>7. Geltendes Recht</h2>
+        <p>Es gilt das Recht der Bundesrepublik Deutschland. Gerichtsstand ist Deutschland.</p>
       </section>
 
       <section>
         <h2>8. Kontakt</h2>
         <div class="contact-box">
-          <p>Bei Fragen zum Datenschutz erreichst du uns unter:</p>
-          <p><a href="#" class="email-link"></a></p>
+          <p>Bei Fragen erreichst du uns unter:</p>
+          <p><a href="mailto:support.messememo@icloud.com" class="email-link">support.messememo@icloud.com</a></p>
         </div>
       </section>
     </div>
 
     <div class="lang-section" id="lang-en">
       <section>
+        <h2>1. Scope</h2>
+        <p>These Terms of Use govern your use of the mobile app <strong style="color:var(--heading)">Messe Memo</strong> (hereinafter referred to as the "App"), available for download on the Apple App Store.</p>
+        <p>By downloading and using the App, you agree to be bound by these Terms of Use.</p>
+      </section>
+
+      <section>
+        <h2>2. License and Usage Rights</h2>
+        <p>Subject to these terms, you are granted a limited, non-exclusive, and non-transferable license to use the App on any Apple-branded products that you own or control.</p>
         <div class="highlight-box">
-          <strong style="color:var(--accent)">Summary:</strong> Messe Memo does <strong>not collect any personal data</strong>. The app operates completely offline. No data is transmitted to third parties.
+          You may not copy, modify, disassemble, reverse engineer, or resell the App.
         </div>
       </section>
 
       <section>
-        <h2>1. Data Controller</h2>
+        <h2>3. User Content</h2>
+        <p>All notes, photos, and records you create within the App are solely your property. The App does not transmit this data to us or any third parties at any time.</p>
+        <p>You bear sole responsibility for the content you store within the App.</p>
+      </section>
+
+      <section>
+        <h2>4. Disclaimer of Warranties</h2>
+        <p>The App is provided on an "as is" and "as available" basis, without any warranties of any kind. We shall not be held liable for:</p>
+        <div class="highlight-box">
+          Data loss caused by device damage or app uninstallation · Errors or service interruptions · Indirect damages arising from the use of the App
+        </div>
+      </section>
+
+      <section>
+        <h2>5. Apple App Store Terms</h2>
+        <p>Your use of the App is additionally subject to the <a href="https://www.apple.com/legal/internet-services/itunes/us/terms.html">Apple App Store Terms of Service</a>. In the event of a conflict between these terms and Apple's terms, Apple's terms shall prevail.</p>
+        <p>Apple is not responsible for the App and assumes no warranty or obligation with respect to it.</p>
+      </section>
+
+      <section>
+        <h2>6. Modifications</h2>
+        <p>We reserve the right to modify these Terms of Use at our discretion. Any changes will be posted on this page. Your continued use of the App following such updates constitutes your acceptance of the revised terms.</p>
+      </section>
+
+      <section>
+        <h2>7. Governing Law</h2>
+        <p>These terms shall be governed by and construed in accordance with the laws of the Federal Republic of Germany.</p>
+      </section>
+
+      <section>
+        <h2>8. Contact</h2>
         <div class="contact-box">
-          <p><strong style="color:var(--heading)">Jarno Kibies</strong></p>
-          <p>GitHub: <a href="https://github.com/Doofenshmirtz-de">github.com/Doofenshmirtz-de</a></p>
-          <p>Contact: <a href="#" class="email-link"></a></p>
-        </div>
-      </section>
-
-      <section>
-        <h2>2. Data Collection</h2>
-        <p>Messe Memo collects <strong>zero personal data</strong>. The app exclusively stores the following locally on your device:</p>
-        <div class="highlight-box">
-          Notes, photos, and records you manually create within the app — these never leave your device.
-        </div>
-        <p>We do not utilize any analytics, tracking, advertising, or crash reporting services that send data to external servers.</p>
-      </section>
-
-      <section>
-        <h2>3. Local Data Storage</h2>
-        <p>All data you enter is stored solely on your iOS device. If you choose to uninstall the app, all locally stored data will be permanently deleted.</p>
-        <p>A backup of your data may be created via iCloud Backup if enabled in your device settings. This process is governed by <a href="https://www.apple.com/legal/privacy/en-ww/" style="color:var(--accent)">Apple's Privacy Policy</a>.</p>
-      </section>
-
-      <section>
-        <h2>4. Third-Party Sharing</h2>
-        <p>We share <strong>absolutely no data</strong> with third parties. The app is free of third-party SDKs, analytics tools, and advertising services.</p>
-      </section>
-
-      <section>
-        <h2>5. Your Rights (GDPR)</h2>
-        <p>Under the General Data Protection Regulation (GDPR), you are entitled to the following rights:</p>
-        <div class="highlight-box">
-          <strong>Access</strong> (Art. 15) · <strong>Rectification</strong> (Art. 16) · <strong>Erasure</strong> (Art. 17) · <strong>Restriction</strong> (Art. 18) · <strong>Objection</strong> (Art. 21)
-        </div>
-        <p>Because the app does not collect or process personal data, these rights are inherently protected by our local-only storage model. You retain full control and can delete all your data directly within the app at any time.</p>
-      </section>
-
-      <section>
-        <h2>6. Children's Privacy</h2>
-        <p>Messe Memo is not intended for use by children under the age of 13. As the app does not collect any personal data, it remains completely safe for users of all ages.</p>
-      </section>
-
-      <section>
-        <h2>7. Policy Updates</h2>
-        <p>We reserve the right to amend this Privacy Policy as necessary. Any modifications will be posted on this page, and the "Last updated" date at the top will reflect these changes.</p>
-      </section>
-
-      <section>
-        <h2>8. Contact Information</h2>
-        <div class="contact-box">
-          <p>For any privacy-related inquiries, please reach out to us at:</p>
-          <p><a href="#" class="email-link"></a></p>
+          <p>If you have any questions, please contact us at:</p>
+          <p><a href="mailto:support.messememo@icloud.com" class="email-link">support.messememo@icloud.com</a></p>
         </div>
       </section>
     </div>
@@ -285,7 +220,7 @@
   <footer>
     <span style="color:var(--muted);font-size:0.85rem">© 2026 Messe Memo</span>
     <div class="footer-links">
-      <a href="terms.html">Nutzungsbedingungen / Terms</a>
+      <a href="privacy-policy.html">Datenschutz / Privacy</a>
       <a href="support.html">Support</a>
     </div>
   </footer>
@@ -297,15 +232,6 @@
       document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
     }
-    (function() {
-      var u = 'support.messememo';
-      var d = 'icloud.com';
-      var email = u + '@' + d;
-      document.querySelectorAll('.email-link').forEach(function(el) {
-        el.href = 'mailto:' + email;
-        el.textContent = email;
-      });
-    })();
   </script>
 </body>
 </html>

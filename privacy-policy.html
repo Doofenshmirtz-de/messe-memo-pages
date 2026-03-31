@@ -11,7 +11,7 @@
       --bg: #0f0f10;
       --surface: #1a1a1d;
       --border: #2a2a2e;
-      --accent: #e8d5b0;
+      --accent: #159FFF;
       --text: #d4d0c8;
       --muted: #6b6860;
       --heading: #f0ece0;
@@ -75,7 +75,7 @@
     .lang-btn.active {
       border-color: var(--accent);
       color: var(--accent);
-      background: rgba(232,213,176,0.07);
+      background: rgba(21, 159, 255, 0.1);
     }
     main {
       position: relative; z-index: 1;
@@ -145,7 +145,7 @@
   <header>
     <div class="app-tag">Messe Memo</div>
     <h1>Datenschutzerklärung<br><span style="color:var(--muted);font-size:0.6em">Privacy Policy</span></h1>
-    <p class="subtitle">Zuletzt aktualisiert · Last updated: <strong style="color:var(--accent)">März 2025</strong></p>
+    <p class="subtitle">Zuletzt aktualisiert · Last updated: <strong style="color:var(--accent)">März 2026</strong></p>
     <div class="lang-toggle">
       <button class="lang-btn active" onclick="switchLang('de', this)">Deutsch</button>
       <button class="lang-btn" onclick="switchLang('en', this)">English</button>
@@ -153,9 +153,7 @@
   </header>
 
   <main>
-    <!-- DEUTSCH -->
     <div class="lang-section visible" id="lang-de">
-
       <section>
         <div class="highlight-box">
           <strong style="color:var(--accent)">Kurzversion:</strong> Messe Memo sammelt <strong>keine personenbezogenen Daten</strong>. Die App funktioniert vollständig offline. Es werden keine Daten an Dritte übertragen.
@@ -167,7 +165,7 @@
         <div class="contact-box">
           <p><strong style="color:var(--heading)">Jarno Kibies</strong></p>
           <p>GitHub: <a href="https://github.com/Doofenshmirtz-de">github.com/Doofenshmirtz-de</a></p>
-          <p>Kontakt: <a href="#" class="email-link">support.messememo@icloud.com</a></p>
+          <p>Kontakt: <a href="mailto:support.messememo@icloud.com" class="email-link">support.messememo@icloud.com</a></p>
         </div>
       </section>
 
@@ -214,18 +212,15 @@
         <h2>8. Kontakt</h2>
         <div class="contact-box">
           <p>Bei Fragen zum Datenschutz erreichst du uns unter:</p>
-          <p><a href="#" class="email-link">support.messememo@icloud.com</a></p>
+          <p><a href="mailto:support.messememo@icloud.com" class="email-link">support.messememo@icloud.com</a></p>
         </div>
       </section>
-
     </div>
 
-    <!-- ENGLISH -->
     <div class="lang-section" id="lang-en">
-
       <section>
         <div class="highlight-box">
-          <strong style="color:var(--accent)">Summary:</strong> Messe Memo collects <strong>no personal data</strong>. The app works completely offline. No data is transmitted to third parties.
+          <strong style="color:var(--accent)">Summary:</strong> Messe Memo does <strong>not collect any personal data</strong>. The app operates completely offline. No data is transmitted to third parties.
         </div>
       </section>
 
@@ -234,60 +229,74 @@
         <div class="contact-box">
           <p><strong style="color:var(--heading)">Jarno Kibies</strong></p>
           <p>GitHub: <a href="https://github.com/Doofenshmirtz-de">github.com/Doofenshmirtz-de</a></p>
-          <p>Contact: <a href="#" class="email-link">support.messememo@icloud.com</a></p>
+          <p>Contact: <a href="mailto:support.messememo@icloud.com" class="email-link">support.messememo@icloud.com</a></p>
         </div>
       </section>
 
       <section>
-        <h2>2. What Data Is Collected?</h2>
-        <p>Messe Memo collects <strong>no personal data</strong>. The app only stores locally on your device:</p>
+        <h2>2. Data Collection</h2>
+        <p>Messe Memo collects <strong>zero personal data</strong>. The app exclusively stores the following locally on your device:</p>
         <div class="highlight-box">
-          Notes, photos, and entries you create within the app — these never leave your device.
+          Notes, photos, and records you manually create within the app — these never leave your device.
         </div>
-        <p>No analytics, tracking, advertising, or crash reports are sent to external servers.</p>
+        <p>We do not utilize any analytics, tracking, advertising, or crash reporting services that send data to external servers.</p>
       </section>
 
       <section>
         <h2>3. Local Data Storage</h2>
-        <p>All data you enter is stored exclusively on your iOS device. If you uninstall the app, all stored data is deleted.</p>
-        <p>A backup may be created via iCloud Backup if you have enabled it on your device. This is subject to <a href="https://www.apple.com/legal/privacy/en-ww/" style="color:var(--accent)">Apple's Privacy Policy</a>.</p>
+        <p>All data you enter is stored solely on your iOS device. If you choose to uninstall the app, all locally stored data will be permanently deleted.</p>
+        <p>A backup of your data may be created via iCloud Backup if enabled in your device settings. This process is governed by <a href="https://www.apple.com/legal/privacy/en-ww/" style="color:var(--accent)">Apple's Privacy Policy</a>.</p>
       </section>
 
       <section>
-        <h2>4. Sharing with Third Parties</h2>
-        <p>We share <strong>no data</strong> with third parties. The app uses no third-party SDKs, analytics tools, or advertising services.</p>
+        <h2>4. Third-Party Sharing</h2>
+        <p>We share <strong>absolutely no data</strong> with third parties. The app is free of third-party SDKs, analytics tools, and advertising services.</p>
       </section>
 
       <section>
         <h2>5. Your Rights (GDPR)</h2>
-        <p>Under the General Data Protection Regulation (GDPR), you have the following rights:</p>
+        <p>Under the General Data Protection Regulation (GDPR), you are entitled to the following rights:</p>
         <div class="highlight-box">
           <strong>Access</strong> (Art. 15) · <strong>Rectification</strong> (Art. 16) · <strong>Erasure</strong> (Art. 17) · <strong>Restriction</strong> (Art. 18) · <strong>Objection</strong> (Art. 21)
         </div>
-        <p>Since the app does not collect or process personal data, these rights are already ensured by local-only storage. You can delete all your data at any time directly within the app.</p>
+        <p>Because the app does not collect or process personal data, these rights are inherently protected by our local-only storage model. You retain full control and can delete all your data directly within the app at any time.</p>
       </section>
 
       <section>
-        <h2>6. Children</h2>
-        <p>Messe Memo is not directed at children under 13. The app does not collect any data and is therefore safe for all age groups.</p>
+        <h2>6. Children's Privacy</h2>
+        <p>Messe Memo is not intended for use by children under the age of 13. As the app does not collect any personal data, it remains completely safe for users of all ages.</p>
       </section>
 
       <section>
-        <h2>7. Changes to This Privacy Policy</h2>
-        <p>We reserve the right to update this privacy policy as needed. Changes will be published on this page. The date of the last update is shown at the top of this page.</p>
+        <h2>7. Policy Updates</h2>
+        <p>We reserve the right to amend this Privacy Policy as necessary. Any modifications will be posted on this page, and the "Last updated" date at the top will reflect these changes.</p>
       </section>
 
       <section>
-        <h2>8. Contact</h2>
+        <h2>8. Contact Information</h2>
         <div class="contact-box">
-          <p>For privacy-related questions, contact us at:</p>
-          <p><a href="#" class="email-link">support.messememo@icloud.com</a></p>
+          <p>For any privacy-related inquiries, please reach out to us at:</p>
+          <p><a href="mailto:support.messememo@icloud.com" class="email-link">support.messememo@icloud.com</a></p>
         </div>
       </section>
-
     </div>
   </main>
 
   <footer>
-    <span style="color:var(--muted);font-size:0.85rem">© 2025 Messe Memo</span>
-    <div class="footer-link
+    <span style="color:var(--muted);font-size:0.85rem">© 2026 Messe Memo</span>
+    <div class="footer-links">
+      <a href="terms.html">Nutzungsbedingungen / Terms</a>
+      <a href="support.html">Support</a>
+    </div>
+  </footer>
+
+  <script>
+    function switchLang(lang, btn) {
+      document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('visible'));
+      document.getElementById('lang-' + lang).classList.add('visible');
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>

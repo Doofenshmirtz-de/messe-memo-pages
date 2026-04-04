@@ -108,6 +108,8 @@
       margin: 20px 0;
       font-size: 0.9rem;
     }
+    ul { margin-left: 20px; margin-bottom: 12px; color: var(--text); }
+    li { margin-bottom: 6px; }
     .contact-box {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -145,7 +147,7 @@
   <header>
     <div class="app-tag">Messe Memo</div>
     <h1>Datenschutzerklärung<br><span style="color:var(--muted);font-size:0.6em">Privacy Policy</span></h1>
-    <p class="subtitle">Zuletzt aktualisiert · Last updated: <strong style="color:var(--accent)">März 2026</strong></p>
+    <p class="subtitle">Zuletzt aktualisiert · Last updated: <strong style="color:var(--accent)">April 2026</strong></p>
     <div class="lang-toggle">
       <button class="lang-btn active" onclick="switchLang('de', this)">Deutsch</button>
       <button class="lang-btn" onclick="switchLang('en', this)">English</button>
@@ -156,76 +158,104 @@
     <div class="lang-section visible" id="lang-de">
       <section>
         <div class="highlight-box">
-          <strong style="color:var(--accent)">Kurzversion:</strong> In der Basisnutzung sammelt Messe Memo <strong>keine personenbezogenen Daten</strong> und funktioniert vollständig offline. Wenn du optionale KI-Funktionen nutzt, werden spezifische Daten nur mit deiner ausdrücklichen Erlaubnis an unseren KI-Partner übertragen, der denselben hohen Datenschutzstandard garantiert.
+          <strong style="color:var(--accent)">Überblick:</strong> Messe Memo ist grundsätzlich <strong>offline-first</strong>. Die App verarbeitet in der Basisnutzung personenbezogene Daten ausschließlich lokal auf dem Gerät und übermittelt sie nicht an uns oder an Dritte. Es gibt optionale Cloud-KI-Funktionen, diese werden jedoch <strong>nur nach deiner aktiven Zustimmung</strong> genutzt.
         </div>
       </section>
 
       <section>
-        <h2>1. Verantwortliche Person</h2>
+        <h2>1. Verantwortlicher</h2>
         <div class="contact-box">
           <p><strong style="color:var(--heading)">Jarno Kibies</strong></p>
           <p>GitHub: <a href="https://github.com/Doofenshmirtz-de">github.com/Doofenshmirtz-de</a></p>
-          <p>Kontakt: <a href="mailto:support.messememo@icloud.com" class="email-link">support.messememo@icloud.com</a></p>
+          <p>E-Mail (Datenschutzkontakt): <a href="mailto:support.messememo@icloud.com" class="email-link">support.messememo@icloud.com</a></p>
         </div>
       </section>
 
       <section>
-        <h2>2. Welche Daten werden erhoben?</h2>
-        <p>In der Basisnutzung erhebt Messe Memo <strong>keine personenbezogenen Daten</strong>. Die App speichert Notizen, Fotos und Einträge, die du erstellst, ausschließlich lokal auf deinem Gerät. Diese verlassen dein Gerät zu keinem Zeitpunkt.</p>
-        <p><strong>Optionale KI-Nutzung:</strong> Wenn du dich entscheidest, unsere optionalen KI-Funktionen zu nutzen, erfassen wir die von dir hochgeladenen Visitenkarten-Fotos oder Sprachnotiz-Transkripte sowie die zugehörigen Kontaktdaten, um diese zu verarbeiten. Die App nutzt keine versteckten Analysen, kein Tracking und keine Werbedienste.</p>
+        <h2>2. Wie und welche Daten werden lokal verarbeitet? (Basis-Nutzung)</h2>
+        <p><strong style="color:var(--heading)">Keine Konten, keine Registrierung:</strong> Messe Memo erfordert keine Registrierung und kein Benutzerkonto. Die App verknüpft lokal gespeicherte Leads nicht mit einem serverseitigen Nutzerprofil.</p>
+        <p>Messe Memo verwendet in der Basisnutzung keine Analyse-, Tracking- oder Werbedienste. Personenbezogene Daten, die du in der App erfasst, werden dabei grundsätzlich nur lokal auf deinem Gerät verarbeitet. Wir verarbeiten zur Lead-Erfassung, Organisation und Nachbereitung von Messekontakten folgende Datenarten:</p>
+        <ul>
+          <li>Manuell eingegebene Kontaktdaten</li>
+          <li>Per Kamera erfasste Visitenkartenbilder</li>
+          <li>Aus QR-Codes gelesene Daten</li>
+          <li>Lokal erkannter OCR-Text</li>
+          <li>Gesprächsnotizen (Text)</li>
+          <li>Aufgenommene Sprachnotizen (Audio)</li>
+          <li>Transkripte der Sprachnotizen</li>
+          <li>Exportdaten (CSV)</li>
+        </ul>
+        
+        <p><strong style="color:var(--heading)">Wie werden die Daten erhoben?</strong><br>
+        Durch direkte Eingabe durch den Nutzer, Scan über die Kamera, Auslesen von QR-Codes, Sprachaufnahme über das Mikrofon, Transkription über Apple-Systemfunktionen und lokale Analyse per OCR. Eine optionale Übermittlung an die Cloud-KI erfolgt nur nach expliziter Auslösung der Funktion.</p>
+        
+        <p><strong style="color:var(--heading)">Rechtsgrundlage:</strong><br>
+        Die Basisfunktionen der App verarbeiten personenbezogene Daten grundsätzlich lokal auf dem Endgerät des Nutzers. Soweit im Zusammenhang mit technischen Schutz-, Support- oder Fehleranalyseprozessen ausnahmsweise eine Verarbeitung durch uns erfolgt, stützen wir uns auf Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO.</p>
+
+        <p><strong style="color:var(--heading)">App-Berechtigungen (Kamera, Mikrofon, Fotos, Spracherkennung):</strong><br>
+        Die App nutzt die Kamera, um Visitenkarten zu fotografieren, das Mikrofon, um Sprachnotizen aufzunehmen und den Fotospeicher (falls Bilder importiert/gespeichert werden). Die Sprachverarbeitung (Speech Recognition) zur Umwandlung in Text erfolgt über von Apple bereitgestellte Systemfunktionen. <em>Hinweis: Je nach iOS-Konfiguration und Geräteunterstützung kann diese Sprachverarbeitung ganz oder teilweise durch Apple-Server erfolgen.</em></p>
+        
+        <p><strong style="color:var(--heading)">CSV-Exportfunktion:</strong><br>
+        Der Export von Daten (z. B. als CSV) erfolgt lokal auf Veranlassung des Nutzers. Bitte beachte, dass exportierte Dateien nach dem Export außerhalb der App weiterverarbeitet, gespeichert oder weitergegeben werden können. Für eine solche Weiterverarbeitung außerhalb der App ist der jeweilige Nutzer selbst verantwortlich.</p>
       </section>
 
       <section>
-        <h2>3. Lokale Datenspeicherung</h2>
-        <p>Alle von dir eingegebenen Daten werden primär ausschließlich lokal auf deinem iOS-Gerät gespeichert. Wenn du die App deinstallierst, werden alle lokal gespeicherten Daten gelöscht.</p>
-        <p>Eine Sicherungskopie kann über iCloud Backup erstellt werden, sofern du iCloud Backup auf deinem Gerät aktiviert hast. Dies unterliegt der <a href="https://www.apple.com/legal/privacy/de-ww/" style="color:var(--accent)">Datenschutzerklärung von Apple</a>.</p>
+        <h2>3. Lokale Datenspeicherung & Speicherdauer</h2>
+        <p>Alle von dir eingegebenen Daten werden primär ausschließlich lokal auf deinem iOS-Gerät gespeichert. Sie verbleiben dort, bis du sie selbst in der App löschst oder die App deinstallierst. Es findet keine automatische Cloud-Synchronisation durch die App statt.</p>
       </section>
 
       <section>
-        <h2>4. Weitergabe an Dritte & Optionale KI-Funktionen</h2>
-        <p>In der Basis-Nutzung werden <strong>keine Daten an Dritte weitergegeben</strong>.</p>
-        <p>Die App bietet jedoch optionale KI-Funktionen (z. B. Cloud-Scanner, KI-E-Mail-Generierung). Um diese bereitzustellen, arbeiten wir mit Drittanbietern zusammen. Wenn du diese Funktionen nutzt, gilt Folgendes:</p>
+        <h2>4. Optionale Cloud-KI-Funktionen & Drittlandtransfer</h2>
+        <p>In der Basisnutzung werden die von dir in der App erfassten personenbezogenen Daten grundsätzlich nicht an uns oder an Dritte übermittelt.</p>
+        <p>Die App bietet jedoch optionale Cloud-KI-Funktionen an, insbesondere die <strong>erweiterte Texterkennung bei Visitenkarten</strong> und die <strong>Generierung von Follow-up-E-Mails</strong>. Wenn du diese Funktionen nutzt, gilt Folgendes:</p>
         <div class="highlight-box">
-          <p><strong>Welche Daten werden gesendet?</strong> Nur nach deiner aktiven Einwilligung senden wir das Foto der Visitenkarte oder das Text-Transkript deiner Sprachnotiz sowie die erfassten Kontaktdaten.</p>
-          <p><strong>An wen werden die Daten gesendet?</strong> Die Daten werden über unsere sichere Backend-Infrastruktur (<strong>Supabase</strong>) an unseren KI-Partner <strong>Google Gemini</strong> (Google LLC) übermittelt.</p>
-          <p><strong>Wie werden die Daten genutzt?</strong> Die Daten werden ausschließlich im Moment der Anfrage verarbeitet ("Stateless API"), um Text zu extrahieren oder E-Mails zu generieren. Google verwendet diese Daten <strong>nicht</strong> zum Training von KI-Modellen und speichert sie nicht dauerhaft.</p>
-          <p><strong>Gleicher Schutzstandard:</strong> Wir bestätigen, dass unsere Drittanbieter (Supabase und Google Gemini) denselben oder einen gleichwertigen Schutz der Nutzerdaten gewährleisten, wie in dieser Richtlinie beschrieben.</p>
+          <p><strong>Datensparsamkeit & Welche Daten werden gesendet?</strong> Bei optionalen Cloud-KI-Funktionen übermitteln wir nur die Daten, die für die jeweilige Funktion zwingend erforderlich sind. Je nach genutzter Funktion übertragen wir: den lokal durch dein Gerät erkannten Rohtext der Visitenkarte (OCR), manuell erfasste Notizen, Gesprächszusammenfassungen, transkribierte Sprachnotizen sowie erfasste Kontaktdaten (Name, Firma, Position, E-Mail, Telefon, Adresse, Website). <strong>Es werden ausdrücklich keine Fotos der Visitenkarten an die Cloud übertragen.</strong></p>
+          <p><strong>Empfänger / eingesetzte Dienstleister:</strong> Die Daten werden zur Verarbeitung an unsere Infrastrukturkomponente <strong>Supabase</strong> gesendet und von dort an den KI-Dienstanbieter <strong>Google Gemini / Google Cloud</strong> (Google LLC) weitergeleitet.</p>
+          <p><strong>Zweck:</strong> Extraktion strukturierter Kontaktdaten aus dem Rohtext, Verbesserung der Erkennungsqualität und die Erstellung personalisierter E-Mail-Entwürfe.</p>
+          <p><strong>Rechtsgrundlage & Einwilligung:</strong> Die Nutzung erfolgt ausschließlich nach deiner vorherigen aktiven Freigabe. Rechtsgrundlage ist deine ausdrückliche Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO. Du kannst eine erteilte Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen, indem du die Cloud-KI in den App-Einstellungen deaktivierst und die Funktionen nicht weiter nutzt. Die Basisfunktionen bleiben ohne Cloud-KI voll nutzbar.</p>
+          <p><strong>Speicherung, Logs & KI-Training:</strong> Die Anfragen werden ausschließlich zur Bearbeitung der jeweiligen Nutzeranfrage verarbeitet und nicht als Nutzerkonto gespeichert. Nach unserem aktuellen Vertrags- und Konfigurationsstand sind die eingesetzten Dienste so konfiguriert, dass die von uns übermittelten Inhalte nicht zum Training generativer Modelle verwendet werden, soweit dies vom jeweiligen Anbieter vorgesehen ist. Server-Logs zur Fehleranalyse und Sicherheit werden nach 7 Tagen gelöscht, Fehlerlogs nach 14 Tagen.</p>
+          <p><strong>Drittlandtransfer:</strong> Eine Verarbeitung durch unsere Dienstleister kann in Drittländern, insbesondere den USA, stattfinden. In diesen Fällen erfolgt die Übermittlung auf Grundlage geeigneter Garantien, wie dem EU-US Data Privacy Framework (Angemessenheitsbeschluss) oder EU-Standardvertragsklauseln.</p>
         </div>
-        <p><strong>Einwilligung:</strong> Die App fragt dich vor der Nutzung der KI-Funktionen innerhalb der App explizit um Erlaubnis, bevor Daten gesendet werden. Du kannst die Funktionen jederzeit nicht nutzen, um eine Datenübertragung zu verhindern.</p>
       </section>
 
       <section>
-        <h2>5. Deine Rechte (DSGVO)</h2>
-        <p>Gemäß der Datenschutz-Grundverordnung (DSGVO) hast du folgende Rechte:</p>
-        <div class="highlight-box">
-          <strong>Auskunft</strong> (Art. 15) · <strong>Berichtigung</strong> (Art. 16) · <strong>Löschung</strong> (Art. 17) · <strong>Einschränkung</strong> (Art. 18) · <strong>Widerspruch</strong> (Art. 21)
-        </div>
-        <p>Da die App keine Benutzerkonten führt, sind diese Rechte durch das lokale Speichern und die direkte Kontrolle über dein Gerät gewährleistet. Du kannst alle deine Daten jederzeit direkt in der App löschen.</p>
+        <h2>5. Datensicherheit</h2>
+        <p>Wir schützen deine Daten durch die lokale Speicherung im sicheren Dateisystem (Sandbox) von iOS. Wenn du die optionalen Cloud-Funktionen nutzt, erfolgt die Datenübertragung stets verschlüsselt (TLS/HTTPS). Der Zugriff auf die Backend-Dienste ist auf das technisch Notwendige beschränkt.</p>
       </section>
 
       <section>
-        <h2>6. Kinder</h2>
-        <p>Messe Memo richtet sich nicht an Kinder unter 13 Jahren. Die App erhebt in der Basisnutzung keine Daten und ist für alle Altersgruppen sicher.</p>
+        <h2>6. Deine Rechte (DSGVO)</h2>
+        <p>Gemäß der Datenschutz-Grundverordnung (DSGVO) hast du folgende Rechte bezüglich deiner personenbezogenen Daten:</p>
+        <ul>
+          <li><strong>Auskunft</strong> (Art. 15), <strong>Berichtigung</strong> (Art. 16), <strong>Löschung</strong> (Art. 17) und <strong>Einschränkung</strong> (Art. 18).</li>
+          <li><strong>Datenübertragbarkeit</strong> (Art. 20): Du kannst deine Daten als CSV aus der App exportieren.</li>
+          <li><strong>Widerspruch</strong> (Art. 21) gegen die Verarbeitung.</li>
+          <li><strong>Widerruf erteilter Einwilligungen</strong> (Art. 7 Abs. 3) mit Wirkung für die Zukunft.</li>
+          <li><strong>Beschwerderecht</strong> (Art. 77) bei einer zuständigen Datenschutz-Aufsichtsbehörde.</li>
+        </ul>
+        <p><em>Hinweis zur Ausübung:</em> Da die Daten primär lokal auf deinem Gerät liegen und wir keine Konten führen, kannst und musst du Auskunft, Löschung und Export in der Regel direkt selbst in der App vornehmen.</p>
       </section>
 
       <section>
-        <h2>7. Änderungen dieser Datenschutzerklärung</h2>
-        <p>Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf zu aktualisieren. Änderungen werden auf dieser Seite veröffentlicht. Das Datum der letzten Aktualisierung steht oben auf dieser Seite.</p>
+        <h2>7. Kinder</h2>
+        <p>Die App richtet sich an berufliche Nutzerinnen und Nutzer im B2B-Umfeld und ist nicht für Kinder bestimmt. Wir beabsichtigen keine gezielte Verarbeitung personenbezogener Daten von Kindern.</p>
       </section>
 
       <section>
-        <h2>8. Kontakt</h2>
-        <div class="contact-box">
-          <p>Bei Fragen zum Datenschutz erreichst du uns unter:</p>
-          <p><a href="mailto:support.messememo@icloud.com" class="email-link">support.messememo@icloud.com</a></p>
-        </div>
+        <h2>8. Änderungen dieser Datenschutzerklärung</h2>
+        <p>Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf zu aktualisieren. Änderungen werden auf dieser Seite veröffentlicht.</p>
+      </section>
+
+      <section>
+        <h2>9. Bereitstellung dieser Website</h2>
+        <p>Diese Informationswebsite wird über GitHub Pages gehostet. Beim Aufruf der Website werden technisch notwendige Verbindungsdaten (wie z. B. IP-Adresse) verarbeitet, um die Website bereitzustellen und deren Sicherheit und Stabilität zu gewährleisten. Rechtsgrundlage hierfür ist unser berechtigtes Interesse gemäß Art. 6 Abs. 1 lit. f DSGVO.</p>
       </section>
     </div>
 
     <div class="lang-section" id="lang-en">
       <section>
         <div class="highlight-box">
-          <strong style="color:var(--accent)">Summary:</strong> In its basic mode, Messe Memo collects <strong>zero personal data</strong> and operates completely offline. If you use optional AI features, specific data is transmitted to our AI partner only with your explicit permission. Our partner guarantees the same high standard of data protection.
+          <strong style="color:var(--accent)">Overview:</strong> Messe Memo is generally <strong>offline-first</strong>. In basic usage, the app processes personal data exclusively locally on the device and does not transmit it to us or third parties. Optional Cloud AI features are only used <strong>after your active consent</strong>.
         </div>
       </section>
 
@@ -234,60 +264,88 @@
         <div class="contact-box">
           <p><strong style="color:var(--heading)">Jarno Kibies</strong></p>
           <p>GitHub: <a href="https://github.com/Doofenshmirtz-de">github.com/Doofenshmirtz-de</a></p>
-          <p>Contact: <a href="mailto:support.messememo@icloud.com" class="email-link">support.messememo@icloud.com</a></p>
+          <p>Email (Privacy Contact): <a href="mailto:support.messememo@icloud.com" class="email-link">support.messememo@icloud.com</a></p>
         </div>
       </section>
 
       <section>
-        <h2>2. Data Collection</h2>
-        <p>In basic usage, Messe Memo collects <strong>zero personal data</strong>. Notes, photos, and records you manually create within the app are stored exclusively locally on your device and never leave it.</p>
-        <p><strong>Optional AI Usage:</strong> If you choose to use our optional AI features, we collect the business card photos or voice note transcripts you upload, along with associated contact details, to process them. We do not utilize hidden analytics, tracking, or advertising services.</p>
+        <h2>2. How and What Data is Processed Locally? (Basic Usage)</h2>
+        <p><strong style="color:var(--heading)">No accounts, no registration:</strong> Messe Memo does not require registration or a user account. The app does not link locally stored leads to a server-side user profile.</p>
+        <p>Messe Memo does not use analytics, tracking, or advertising services in basic usage. Personal data you enter in the app is generally processed only locally on your device. We process the following data types to enable lead capture, organization, and follow-up of trade fair contacts:</p>
+        <ul>
+          <li>Manually entered contact data</li>
+          <li>Business card images captured via camera</li>
+          <li>Data read from QR codes</li>
+          <li>Locally recognized OCR text</li>
+          <li>Conversation notes (text)</li>
+          <li>Recorded voice notes (audio)</li>
+          <li>Transcripts of voice notes</li>
+          <li>Export data (CSV)</li>
+        </ul>
+        
+        <p><strong style="color:var(--heading)">How is data collected?</strong><br>
+        Through direct user input, camera scans, QR code reading, voice recording via the microphone, transcription via Apple system functions, and local OCR analysis. Optional transmission to Cloud AI occurs only after explicitly triggering the function.</p>
+
+        <p><strong style="color:var(--heading)">Legal Basis:</strong><br>
+        The basic functions of the app generally process personal data locally on the user's device. To the extent that processing by us occurs exceptionally in connection with technical protection, support, or error analysis processes, we rely on Art. 6(1)(b) or (f) GDPR.</p>
+
+        <p><strong style="color:var(--heading)">App Permissions (Camera, Microphone, Photos, Speech Recognition):</strong><br>
+        The app uses the camera to photograph business cards, the microphone to record voice notes, and photo storage (if images are imported/saved). Speech recognition to convert audio to text uses system functions provided by Apple. <em>Note: Depending on your iOS configuration and device support, this speech processing may be performed entirely or partially on Apple servers.</em></p>
+        
+        <p><strong style="color:var(--heading)">CSV Export Function:</strong><br>
+        Data exports (e.g., as CSV) are performed locally at the user's request. Please note that exported files may be further processed, stored, or shared outside the app after export. The respective user is responsible for any such further processing outside the app.</p>
       </section>
 
       <section>
-        <h2>3. Local Data Storage</h2>
-        <p>All data you enter is stored solely on your iOS device. If you choose to uninstall the app, all locally stored data will be permanently deleted.</p>
-        <p>A backup of your data may be created via iCloud Backup if enabled in your device settings. This process is governed by <a href="https://www.apple.com/legal/privacy/en-ww/" style="color:var(--accent)">Apple's Privacy Policy</a>.</p>
+        <h2>3. Local Data Storage & Retention Period</h2>
+        <p>All data you enter is stored primarily and exclusively locally on your iOS device. It remains there until you delete it within the app or uninstall the app. There is no automatic cloud synchronization performed by the app.</p>
       </section>
 
       <section>
-        <h2>4. Third-Party Sharing & Optional AI Features</h2>
-        <p>In basic usage, we share <strong>absolutely no data with third parties</strong>.</p>
-        <p>However, the app offers optional AI features (e.g., Cloud Scanner, AI Email Generation). To provide these, we work with third-party providers. If you use these features, the following applies:</p>
+        <h2>4. Optional Cloud AI Features & Third-Country Transfer</h2>
+        <p>In basic usage, the personal data you enter in the app is generally <strong>not transmitted to us or third parties</strong>.</p>
+        <p>However, the app offers optional Cloud AI features, specifically <strong>advanced text recognition for business cards</strong> and the <strong>generation of follow-up emails</strong>. If you use these features, the following applies:</p>
         <div class="highlight-box">
-          <p><strong>What data is sent?</strong> Only after your active permission, we send the captured photo of the business card or the text transcript of your voice note, along with the captured contact details.</p>
-          <p><strong>Who is the data sent to?</strong> The data is transmitted via our secure backend infrastructure (<strong>Supabase</strong>) to our AI partner <strong>Google Gemini</strong> (Google LLC).</p>
-          <p><strong>How is the data used?</strong> The data is processed solely in the moment ("Stateless API") to extract text or formulate an email draft. Google does <strong>not</strong> use this data to train AI models and does not store it permanently.</p>
-          <p><strong>Equal Protection Standard:</strong> We confirm that our third-party providers (Supabase and Google Gemini) provide the same or equal protection of user data as stated in this policy.</p>
+          <p><strong>Data Minimization & What data is sent?</strong> For optional Cloud AI functions, we only transmit the data strictly required for the respective function. Depending on the feature used, we transmit: the raw text extracted locally from the business card (OCR), manually entered notes, conversation summaries, transcribed voice notes, and captured contact details (name, company, position, email, phone, address, website). <strong>We expressly do not transmit any photos of the business cards to the cloud.</strong></p>
+          <p><strong>Recipients / Service Providers Used:</strong> The data is sent for processing to our infrastructure component <strong>Supabase</strong> and forwarded from there to the AI service provider <strong>Google Gemini / Google Cloud</strong> (Google LLC).</p>
+          <p><strong>Purpose:</strong> Extraction of structured contact data from raw text, improvement of recognition quality, and creation of personalized email drafts.</p>
+          <p><strong>Legal Basis & Consent:</strong> Usage occurs exclusively after your prior active approval. The legal basis is your explicit consent according to Art. 6(1)(a) GDPR. You can revoke your consent at any time with effect for the future by disabling the Cloud AI in the app settings and discontinuing use of the features. The basic functions remain fully usable without Cloud AI.</p>
+          <p><strong>Storage, Logs & AI Training:</strong> Requests are processed exclusively to fulfill the respective user request and are not stored as a user account. Based on our current contractual and configuration status, the services used are configured so that the content we transmit is not used to train generative models, to the extent this is supported by the respective provider. Server logs for error analysis and security are deleted after 7 days, error logs after 14 days.</p>
+          <p><strong>Third-Country Transfer:</strong> Processing by our service providers may take place in third countries, particularly the USA. In these cases, the transfer takes place on the basis of appropriate safeguards, such as the EU-US Data Privacy Framework (adequacy decision) or EU Standard Contractual Clauses.</p>
         </div>
-        <p><strong>Permission:</strong> The app explicitly asks for your permission within the app interface before sending data to the third-party provider. You can choose not to use these features to prevent any data transmission.</p>
       </section>
 
       <section>
-        <h2>5. Your Rights (GDPR)</h2>
-        <p>Under the General Data Protection Regulation (GDPR), you are entitled to the following rights:</p>
-        <div class="highlight-box">
-          <strong>Access</strong> (Art. 15) · <strong>Rectification</strong> (Art. 16) · <strong>Erasure</strong> (Art. 17) · <strong>Restriction</strong> (Art. 18) · <strong>Objection</strong> (Art. 21)
-        </div>
-        <p>Because the app does not maintain user accounts, these rights are inherently protected by our local-only storage model and your direct control over your device. You retain full control and can delete all your data directly within the app at any time.</p>
+        <h2>5. Data Security</h2>
+        <p>We protect your data through local storage in the secure file system (sandbox) of iOS. If you use the optional cloud features, data transmission is always encrypted (TLS/HTTPS). Access to backend services is restricted to what is technically necessary.</p>
       </section>
 
       <section>
-        <h2>6. Children's Privacy</h2>
-        <p>Messe Memo is not intended for use by children under the age of 13. As the app does not collect personal data in basic usage, it remains completely safe for users of all ages.</p>
+        <h2>6. Your Rights (GDPR)</h2>
+        <p>Under the General Data Protection Regulation (GDPR), you have the following rights regarding your personal data:</p>
+        <ul>
+          <li><strong>Access</strong> (Art. 15), <strong>Rectification</strong> (Art. 16), <strong>Erasure</strong> (Art. 17), and <strong>Restriction</strong> (Art. 18).</li>
+          <li><strong>Data Portability</strong> (Art. 20): You can export your data as a CSV from the app.</li>
+          <li><strong>Objection</strong> (Art. 21) to the processing.</li>
+          <li><strong>Revocation of given consent</strong> (Art. 7(3)) with effect for the future.</li>
+          <li><strong>Right to lodge a complaint</strong> (Art. 77) with a competent data protection supervisory authority.</li>
+        </ul>
+        <p><em>Note on exercising rights:</em> Since the data is primarily stored locally on your device and we do not maintain accounts, you can and must generally perform access, deletion, and export directly within the app yourself.</p>
       </section>
 
       <section>
-        <h2>7. Policy Updates</h2>
-        <p>We reserve the right to amend this Privacy Policy as necessary. Any modifications will be posted on this page, and the "Last updated" date at the top will reflect these changes.</p>
+        <h2>7. Children</h2>
+        <p>The app is directed at professional users in a B2B environment and is not intended for children. We do not intend to purposefully process personal data of children.</p>
       </section>
 
       <section>
-        <h2>8. Contact Information</h2>
-        <div class="contact-box">
-          <p>For any privacy-related inquiries, please reach out to us at:</p>
-          <p><a href="mailto:support.messememo@icloud.com" class="email-link">support.messememo@icloud.com</a></p>
-        </div>
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>We reserve the right to update this Privacy Policy as needed. Changes will be published on this page.</p>
+      </section>
+
+      <section>
+        <h2>9. Provision of this Website</h2>
+        <p>This informational website is hosted via GitHub Pages. When visiting the website, technically necessary connection data (such as IP address) is processed to provide the website and ensure its security and stability. The legal basis for this is our legitimate interest pursuant to Art. 6(1)(f) GDPR.</p>
       </section>
     </div>
   </main>
